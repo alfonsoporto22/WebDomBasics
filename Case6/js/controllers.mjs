@@ -24,3 +24,9 @@ export function removeCompletedHandler (event) {
     setTasks(tasks)
     dataToHTMLList(tasks)
 }
+
+const boton=document.querySelector("button");
+
+boton.addEventListener("click", (event) => {
+    removeCompletedHandler (event);
+})
